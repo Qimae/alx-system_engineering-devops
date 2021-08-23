@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name \*.gif -exec sh -c \'identify -format "%[fx:n>1]\n" "$0" | grep -q 1' {} \; -print
+find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f
