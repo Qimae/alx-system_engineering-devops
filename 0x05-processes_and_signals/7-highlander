@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script displays "To infinity and beyond" with a sleep 2 an "I am invincible" on SIGTERM
+
+sig()
+{
+	echo "I am invincible!!!"
+}
+trap "sig" SIGTERM
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
