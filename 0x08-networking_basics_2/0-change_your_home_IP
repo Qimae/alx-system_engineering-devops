@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script configures an UBUNTU server
+
+cp /etc/hosts hostsNew
+sed -i s/127.*$/127.0.0.2\\tlocalhost\\n8.8.8.8\\tfacebook.com/g hostsNew
+cp -f hostsNew /etc/hosts
