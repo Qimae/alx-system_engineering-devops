@@ -1,5 +1,5 @@
 # SSH client configuration to use private key ~/.ssh/school
 
-Host 34.75.163.65
+Host 34.138.186.79
 	PasswordAuthentication no
 	IdentityFile ~/.ssh/school
